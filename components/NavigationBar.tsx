@@ -65,7 +65,7 @@ export default function NavigationBar({ onSearchClick }: NavigationBarProps) {
         </button>
         <button
           onClick={() => setIsLoginOpen(true)}
-          className="text-white text-lg md:text-xl lg:text-2xl font-medium px-2 md:px-3 py-1 md:py-2 hover:text-gray-300 transition-colors"
+          className="text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium px-2 md:px-3 py-1 md:py-2 hover:text-gray-300 transition-colors font-nanum-brush-script"
           aria-label="로그인"
         >
           login

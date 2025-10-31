@@ -34,21 +34,21 @@ export default function CategoryPage() {
   const filteredProducts = allProducts[categoryName as keyof typeof allProducts] || []
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen flex flex-col relative bg-pink-50">
       <NavigationBar onSearchClick={() => setIsSearchOpen(true)} />
       
       {/* 상단 네비게이션 바 공간 */}
       <div className="h-[72px] md:h-[80px] lg:h-[88px]"></div>
       
       {/* 메인 컨텐츠 */}
-      <div className="md:ml-64 lg:ml-72">
+      <div className="md:ml-64 lg:ml-72 relative z-10 bg-pink-50">
         {/* 카테고리 헤더 */}
-        <div className="bg-white border-b border-gray-200 py-4 md:py-6">
+        <div className="bg-pink-50 py-4 md:py-6 relative z-10">
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 font-nanum-brush-script">
               {categoryName}
             </h1>
-            <p className="text-gray-600 mt-2">
+            <p className="text-gray-600 mt-2 font-nanum-brush-script text-lg md:text-xl lg:text-2xl">
               {filteredProducts.length}개의 상품
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function CategoryPage() {
         {/* 카테고리별 상품 그리드 */}
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 md:py-6">
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 items-stretch">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 items-stretch relative z-10">
               {filteredProducts.map((product: any) => (
                 <ProductCard
                   key={product.id}

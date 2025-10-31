@@ -87,7 +87,7 @@ export default function PhotoReviewModal({ isOpen, onClose }: PhotoReviewModalPr
           onClick={(e) => e.stopPropagation()}
         >
           {/* 헤더 */}
-          <div className="sticky top-0 bg-rose-800 text-white px-6 py-4 flex items-center justify-between z-10">
+          <div className="sticky top-8 md:top-12 bg-rose-800 text-white px-6 py-4 flex items-center justify-between z-10 rounded-t-lg mt-4 md:mt-8">
             <h2 className="text-xl font-bold">베스트 포토 리뷰 Top 5</h2>
             <button
               onClick={onClose}

@@ -108,7 +108,7 @@ export default function BannerSection() {
     )
   }
   return (
-    <div className="w-full bg-gray-50 py-4 md:py-6">
+    <div className="w-full bg-pink-50 py-4 md:py-6">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-3 md:grid-cols-3 gap-2 md:gap-4">
           {/* 카카오톡 채널 쿠폰 배너 */}

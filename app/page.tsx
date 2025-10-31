@@ -33,21 +33,21 @@ export default function Home() {
   }, [selectedCategory])
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen flex flex-col relative bg-pink-50">
       <NavigationBar onSearchClick={() => setIsSearchOpen(true)} />
       
       {/* 상단 네비게이션 바 공간 */}
       <div className="h-[72px] md:h-[80px] lg:h-[88px]"></div>
       
       {/* 메인 컨텐츠 (데스크톱에서만 카테고리 메뉴 공간 확보) */}
-      <div className="md:ml-64 lg:ml-72">
+      <div className="md:ml-64 lg:ml-72 relative z-10 bg-pink-50">
         {/* 배너 섹션 */}
         <BannerSection />
         
         {/* 카테고리별 상품 그리드 */}
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 py-4 md:py-6 items-stretch">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 py-4 md:py-6 items-stretch relative z-10">
               {filteredProducts.map((product: any) => (
                 <ProductCard
                   key={product.id}

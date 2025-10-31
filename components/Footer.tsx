@@ -65,7 +65,9 @@ export default function Footer() {
                 365고객센터 | 전자금융거래분쟁처리담당 | 채무지급보증 안내
               </div>
               <div className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
-                1577-7011 <span className="text-sm font-normal">(유료)</span>
+                <a href="tel:1577-7011" className="hover:text-blue-600 transition-colors cursor-pointer">
+                  1577-7011 <span className="text-sm font-normal">(유료)</span>
+                </a>
               </div>
               <div className="text-xs md:text-sm text-gray-600 space-y-1 mb-3">
                 <p>당사는 고객님이 현금 결제한 금액에 대해 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
@@ -114,15 +116,11 @@ export default function Footer() {
             </div>
             <div className="flex gap-3">
               {/* Facebook */}
-              <a href="#" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                 <span className="text-white font-bold text-sm">f</span>
               </a>
-              {/* Blog */}
-              <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
-                <span className="text-white text-xs font-semibold">blog</span>
-              </a>
               {/* Instagram */}
-              <a href="#" className="w-10 h-10 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 rounded-full flex items-center justify-center hover:opacity-90 transition-opacity">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
